@@ -14,12 +14,25 @@ $(document).ready(function(){
 	 	success: function(data){
 	 		alert("successfully submited.")
 	 		$('#refume_frm').trigger('reset');
-	 		
+	 		getdata(); 
 	 	},
 	 	error: function(){
 	 		alert("404");
 	 	}
 	 });
+
+	 //get data
+	 function getdata() {
+		 $.ajax({
+			url: 'getdata.php',
+			success: function(response){
+				$('#getdata').html(response);
+			},
+			error: function(){
+				alert('error to getdata');
+			}	
+		 });
+	 }
 	 
 	 return false;
 

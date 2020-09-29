@@ -13,7 +13,7 @@
 	<div class="container">
 		<div class="row margin-bottom">
 			<div class="col-sm-12 d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded box-shadow"><h3 class="margin-top margin-bottom">Refume Form</h3></div>
-			<div class="col-sm-8 my-3 p-3 bg-white rounded box-shadow">
+			<div class="col-sm-12 my-3 p-3 bg-white rounded box-shadow">
 				<form id="refume_frm" enctype="multipart/form-data" method="post">
 					<div class="col-sm-12 clearfix">
 					<div class="col-sm-6 float-left">
@@ -130,12 +130,8 @@
 					<button type="reset" class="btn btn-secondary btn-lg">Reset</button>				    
 				</form>
 			</div>
-			<div class="col-sm-4 my-3 p-3 bg-white rounded box-shadow">
-				<?php
-
-					
-				?>
-
+			<div class="col-sm-12 my-3 p-3 bg-white rounded box-shadow">
+				<div id="getdata"></div>
 			</div>
 		</div>
 	</div>
